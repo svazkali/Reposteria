@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repostería en Santa Fe, Argentina</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        /* Estilos para dispositivos móviles */
+        @media only screen and (max-width: 600px) {
+            /* Estilos para el encabezado */
+            header {
+                text-align: center;
+            }
+            .buttons {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            /* Estilos para el contenido principal */
+            main {
+                padding: 20px;
+            }
+        }
+        
+        /* Estilos para tablets */
+        @media only screen and (min-width: 601px) and (max-width: 1024px) {
+            /* Estilos para el encabezado */
+            header {
+                text-align: center;
+            }
+            .buttons {
+                display: flex;
+                justify-content: center;
+            }
+            /* Estilos para el contenido principal */
+            main {
+                padding: 40px;
+            }
+        }
+        
+        /* Estilos para computadoras */
+        @media only screen and (min-width: 1025px) {
+            /* Estilos para el encabezado */
+            header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-left: 20px;
+            }
+            .buttons {
+                display: flex;
+                justify-content: flex-end;
+                padding-right: 20px; /* Add padding to the right of the buttons */
+            }
+            /* Estilos para el contenido principal */
+            main {
+                padding: 60px;
+            }
+        }
+        
+        /* Estilos para la cuadrícula de productos */
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        
+        .product {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            margin: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 300px;
+            padding: 10px;
+        }
+
+        .product img {
+            width: 100%; /* La imagen ocupará el 100% del ancho del contenedor */
+            border-radius: 5px 5px 0 0; /* Esquinas redondeadas solo en la parte superior */
+        }
+
+        .product h3, .product p {
+            text-align: center; /* Centra el texto */
+        }
+
+        .product button {
+            margin-top: 10px; /* Agrega un espacio entre el texto y el botón */
+        }
+    </style>
+<style>
+    /* Estilos para computadoras */
+    @media only screen and (min-width: 1025px) {
+        /* Estilos para el encabezado */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .buttons {
+            display: flex;
+            justify-content: flex-end;
+            padding-bottom: 20px; /* Add padding to the right of the buttons */
+        }
+        /* Estilos para el contenido principal */
+        main {
+            padding: 60px;
+        }
+        /* Estilos para el pie de página */
+        footer {
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+</style>
+<body>
+    <header>
+        <h1>Repostería en Santa Fe, Argentina</h1>
+        <nav>
+            <ul class="buttons">
+                <a href="#main"><button>Inicio</button></a>
+                <a href="#productos"><button>Productos</button></a>
+                <a href="#aboutUs"><button>Sobre Nosotros</button></a>
+            </ul>
+        </nav>
+    </header>
+    <hr> <!-- Add a horizontal line here -->
+    
+    <main id="main">
+        <p>Bienvenidos a nuestra panadería en Santa Fe, Argentina. Aquí encontrarás los mejores productos de repostería, hechos con amor y dedicación.</p>
+        
+        <h2>Nuestros Productos</h2>
+        
+        <div class="product-grid" id="productos">
+            <div class="product">
+                <img src="/media/croissant.jpg" alt="Croissant">
+                <h3>Croissant</h3>
+                <p>Deliciosos croissants recién horneados, perfectos para disfrutar en el desayuno o la merienda.</p>
+                <a href="about:blank"><button>Ver más</button></a>
+            </div>
+
+            <div class="product">
+                <img src="/media/pastel.jpg" alt="Pastel">
+                <h3>Pastel</h3>
+                <p>Exquisitos pasteles elaborados con los mejores ingredientes, ideales para celebraciones y ocasiones especiales.</p>
+                <a href="about:blank" id="BtnPtl"><button>Ver más</button></a>
+            </div>
+
+            <div class="product">
+                <img src="/media/medialuna.jpg" alt="Medialuna">
+                <h3>Medialuna</h3>
+                <p>Irresistibles medialunas dulces y saladas, perfectas para acompañar un buen café o té.</p>
+                <a href="about:blank"><button>Ver más</button></a>
+            </div>
+
+            <div class="product">
+                <img src="/media/torta.jpg" alt="Torta">
+                <h3>Torta</h3>
+                <p>Deliciosas tortas de diferentes sabores y tamaños, ideales para celebrar cualquier ocasión especial.</p>
+                <a href="about:blank"><button>Ver más</button></a>
+            </div>
+
+            <div class="product">
+                <img src="/media/alfajor.jpg" alt="Alfajor">
+                <h3>Alfajores</h3>
+                <p>Tradicionales alfajores argentinos, con un suave relleno de dulce de leche y cubiertos de chocolate.</p>
+                <a href="about:blank"><button>Ver más</button></a>
+            </div>
+
+            <div class="product">
+                <img src="/media/panettone.jpg" alt="Panettone">
+                <h3>Panettone</h3>
+                <p>Delicioso panettone italiano, con frutas confitadas y frutos secos, perfecto para la época navideña.</p>
+                <a href="about:blank"><button>Ver más</button></a>
+            </div>
+
+            <div class="product">
+                <img src="/media/cookies.jpg" alt="Cookies">
+                <h3>Cookies</h3>
+                <p>Irresistibles galletas caseras, con trozos de chocolate y nueces, ideales para disfrutar en cualquier momento.</p>
+                <a href="about:blank"><button>Ver más</button></a>
+            </div>
+
+            <div class="product">
+                <img src="/media/panfrances.jpg" alt="Pan Francés">
+                <h3>Pan Francés</h3>
+                <p>Delicioso pan francés, con una textura suave por dentro y crujiente por fuera, perfecto para el desayuno o la cena.</p>
+                <a href="about:blank"><button>Ver más</button></a>
+            </div>
+
+            <div class="product">
+                <img src="/media/tarta.jpg" alt="Tarta">
+                <h3>Tarta</h3>
+                <p>Deliciosas tartas saladas, con una variedad de rellenos como jamón y queso, verduras, y mucho más.</p>
+                <a href="about:blank"><button>Ver más</button></a>
+            </div>
+
+            <div class="product">
+                <img src="/media/panqueques.jpg" alt="Panqueques">
+                <h3>Panqueques</h3>
+                <p>Irresistibles panqueques dulces, con diferentes sabores de relleno como dulce de leche, chocolate y frutas.</p>
+                <a href="about:blank"><button>Ver más</button></a>
+            </div>
+
+            <div class="product">
+                <img src="/media/pan.jpg" alt="Pan">
+                <h3>Pan</h3>
+                <p>Delicioso pan recién horneado, con una variedad de sabores como integral, centeno, avena, y mucho más.</p>
+                <a href="about:blank"><button>Ver más</button></a>
+            </div>
+
+            <div class="product">
+            <img src="/media/pancitos.jpg" alt="Pancitos">
+                <h3>Pancitos</h3>
+                <p>Irresistibles pancitos recién horneados, perfectos para acompañar cualquier comida o para hacer sándwiches.</p>
+                <a href="about:blank"><button>Ver más</button></a>
+            </div>
+        </main>
+    <hr> <!-- Add a horizontal line here -->
+    
+    <section id="aboutUs" style="padding: 20px;">
+        <h2 style="text-align: center;">Sobre nosotros</h2>
+        <p>Somos una panadería ubicada en Santa Fe, Argentina, dedicada a ofrecer productos de alta calidad y sabor excepcional. Nuestro equipo de panaderos y pasteleros expertos se esfuerza por crear deliciosos croissants, pasteles, medialunas, tortas, alfajores y muchos otros productos de repostería.</p>
+        <p>Utilizamos los mejores ingredientes y técnicas tradicionales para garantizar que cada bocado sea una experiencia única. Nuestro objetivo es brindar a nuestros clientes momentos de placer y satisfacción a través de nuestros productos frescos y deliciosos.</p>
+        <p>Además de nuestra amplia variedad de productos, también ofrecemos servicios personalizados para eventos especiales como cumpleaños, bodas y celebraciones. Nuestro equipo está comprometido en hacer de cada ocasión un momento inolvidable con nuestras exquisitas creaciones.</p>
+        <p>¡Ven a visitarnos y descubre el sabor auténtico de la repostería argentina en Santa Fe!</p>
+        <img src="/media/bakery.jpg" alt="PasteleriaStaFe" style="max-width: 100%; height: auto;">
+</section>
+    
+    <footer>
+        <p>Derechos de autor &copy; 2022 Repostería en Santa Fe, Argentina. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
+

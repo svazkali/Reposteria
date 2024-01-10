@@ -1,0 +1,36 @@
+
+.buttons button {
+    /* Add your styles here. For example: */
+    background-color: #FFC0CB; /* Pastel Pink */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    border-radius: 10px; /* Add border radius value */
+}
+
+.buttons button:hover {
+    background-color: #ADD8E6; /* Pastel Blue */
+}
+
+
+body {
+    background-color: #ADD8E6; /* Light Blue */
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
